@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TUSHAR — Video Editor & Web Designer | Professional Portfolio</title>
+
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:wght@300;400;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       ROTATE OVERLAY — Portrait mobile only
+  ══════════════════════════════════════════════ -->
+  <div id="rotate-overlay">
+    <div class="rotate-inner">
+      <div class="rotate-icon">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer circle -->
+          <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+          <!-- Phone body -->
+          <rect x="30" y="20" width="40" height="60" rx="5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <!-- Phone screen -->
+          <rect x="33" y="24" width="34" height="48" rx="3" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+          <!-- Phone notch -->
+          <rect x="42" y="24" width="16" height="6" rx="2" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+          <!-- Home button -->
+          <circle cx="50" cy="76" r="2" fill="currentColor" opacity="0.6"/>
+          <!-- Rotation arrows -->
+          <g class="rotate-arrows">
+            <path d="M 70 30 Q 80 50 70 70" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <polygon points="70,70 75,65 68,60" fill="currentColor"/>
+            <path d="M 30 70 Q 20 50 30 30" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <polygon points="30,30 25,35 32,40" fill="currentColor"/>
+          </g>
+        </svg>
+      </div>
+      <p class="rotate-title">Please Rotate<br/>Your Phone</p>
+      <p class="rotate-sub">This website is best viewed in landscape mode.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       WELCOME SCREEN
+  ══════════════════════════════════════════════ -->
+  <div id="welcome-screen">
+    <div class="welcome-inner">
+      <div class="welcome-line" id="wl1"><i class="fas fa-star"></i> Welcome To</div>
+      <div class="welcome-line" id="wl2">The World Of</div>
+      <div class="welcome-name" id="wl3">
+        <span class="name-char">T</span>
+        <span class="name-char">U</span>
+        <span class="name-char">S</span>
+        <span class="name-char">H</span>
+        <span class="name-char">A</span>
+        <span class="name-char">R</span>
+      </div>
+      <div class="welcome-bar" id="wl4"></div>
+      <div class="welcome-subtext" id="wl5">Creative Designer & Video Editor</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION — IMAGE SEQUENCE
+  ══════════════════════════════════════════════ -->
+  <section id="hero">
+    <div id="hero-canvas-wrap">
+      <canvas id="hero-canvas"></canvas>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SITE WRAPPER (content over background)
+  ══════════════════════════════════════════════ -->
+  <div id="site-body">
+
+    <!-- Global background image (About onwards) -->
+    <div id="global-bg"></div>
+
+    <!-- ── ABOUT ── -->
+    <section id="about" class="section">
+      <div class="section-inner">
+        <div class="section-label"><i class="fas fa-circle-notch"></i> 001 / About</div>
+        <h2 class="section-heading">Crafting Stories<br /><em>Frame by Frame</em></h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="text-animate">I'm <strong>Tushar</strong> — a Video Editor and Web Designer who blends cinematic storytelling with pixel-perfect interfaces. Every frame I cut and every layout I design carries intention.</p>
+            <p class="text-animate">With a passion for motion, aesthetics, and clean code, I turn ideas into visual experiences that leave a lasting impression. I specialize in creating engaging video content and responsive web designs that captivate audiences and drive results.</p>
+            <p class="text-animate">My approach combines technical expertise with creative vision, ensuring every project reflects excellence and innovation. Whether it's a cinematic video edit or a stunning web interface, I deliver work that exceeds expectations.</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat stat-animate">
+              <span class="stat-num">1<span class="stat-plus">+</span></span>
+              <span class="stat-label"><i class="fas fa-briefcase"></i> Years Experience</span>
+            </div>
+            <div class="stat stat-animate">
+              <span class="stat-num">5<span class="stat-plus">+</span></span>
+              <span class="stat-label"><i class="fas fa-project-diagram"></i> Projects Done</span>
+            </div>
+            <div class="stat stat-animate">
+              <span class="stat-num">2<span class="stat-plus">+</span></span>
+              <span class="stat-label"><i class="fas fa-smile"></i> Happy Clients</span>
+            </div>
+            <div class="stat stat-animate">
+              <span class="stat-num">100<span class="stat-plus">%</span></span>
+              <span class="stat-label"><i class="fas fa-heart"></i> Satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICES ── -->
+    <section id="services" class="section">
+      <div class="section-inner">
+        <div class="section-label"><i class="fas fa-cogs"></i> 002 / Services</div>
+        <h2 class="section-heading">What I<br /><em>Offer</em></h2>
+        <div class="services-grid">
+          <div class="service-card service-animate">
+            <div class="service-icon">
+              <i class="fas fa-video"></i>
+            </div>
+            <h3>Video Editing</h3>
+            <p>Professional video editing with cinematic effects, color grading, sound design, and motion graphics to bring your stories to life.</p>
+            <ul class="service-list">
+              <li><i class="fas fa-check"></i> Capcut & Alight Motion</li>
+              <li><i class="fas fa-check"></i> Color Grading</li>
+              <li><i class="fas fa-check"></i> Motion Graphics</li>
+              <li><i class="fas fa-check"></i> Sound Design</li>
+            </ul>
+          </div>
+
+          <div class="service-card service-animate">
+            <div class="service-icon">
+              <i class="fas fa-laptop"></i>
+            </div>
+            <h3>Web Design</h3>
+            <p>Stunning, responsive web designs that blend aesthetics with functionality. Creating digital experiences that engage and convert.</p>
+            <ul class="service-list">
+              <li><i class="fas fa-check"></i> Responsive Design</li>
+              <li><i class="fas fa-check"></i> UI/UX Design</li>
+              <li><i class="fas fa-check"></i> Interactive Elements</li>
+              <li><i class="fas fa-check"></i> Performance Optimized</li>
+            </ul>
+          </div>
+
+          <div class="service-card service-animate">
+            <div class="service-icon">
+              <i class="fas fa-wand-magic-sparkles"></i>
+            </div>
+            <h3>Motion Design</h3>
+            <p>Dynamic animations and motion graphics that add life to your content. From subtle transitions to complex sequences.</p>
+            <ul class="service-list">
+              <li><i class="fas fa-check"></i> 2D Animation</li>
+              <li><i class="fas fa-check"></i> Transitions</li>
+              <li><i class="fas fa-check"></i> Visual Effects</li>
+              <li><i class="fas fa-check"></i> Kinetic Typography</li>
+            </ul>
+          </div>
+
+          <div class="service-card service-animate">
+            <div class="service-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3>Branding</h3>
+            <p>Complete branding solutions including logo design, brand identity, and visual guidelines that make you stand out.</p>
+            <ul class="service-list">
+              <li><i class="fas fa-check"></i> Logo Design</li>
+              <li><i class="fas fa-check"></i> Brand Identity</li>
+              <li><i class="fas fa-check"></i> Visual Guidelines</li>
+              <li><i class="fas fa-check"></i> Brand Strategy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section id="skills" class="section">
+      <div class="section-inner">
+        <div class="section-label"><i class="fas fa-star"></i> 003 / Skills</div>
+        <h2 class="section-heading">Technical<br /><em>Expertise</em></h2>
+        <div class="skills-container">
+          <div class="skills-left">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Video Editing</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Web Design</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">UI/UX Design</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 88%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Motion Graphics</span>
+                <span class="skill-percent">92%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 92%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-right">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">HTML / CSS</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Figma</span>
+                <span class="skill-percent">87%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 87%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Adobe Suite</span>
+                <span class="skill-percent">89%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 89%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-skills">
+          <span class="skill-badge"><i class="fas fa-video"></i> Capcut</span>
+          <span class="skill-badge"><i class="fas fa-film"></i> Alight Motion</span>
+          <span class="skill-badge"><i class="fas fa-code"></i> HTML / CSS</span>
+          <span class="skill-badge"><i class="fas fa-js"></i> JavaScript</span>
+          <span class="skill-badge"><i class="fas fa-pencil-ruler"></i> Figma</span>
+          <span class="skill-badge"><i class="fas fa-image"></i> Inshot</span>
+          <span class="skill-badge"><i class="fas fa-layer-group"></i> After Effects</span>
+          <span class="skill-badge"><i class="fas fa-palette"></i> Photoshop</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WORKFLOW/PROCESS ── -->
+    <section id="process" class="section">
+      <div class="section-inner">
+        <div class="section-label"><i class="fas fa-cogs"></i> 004 / Process</div>
+        <h2 class="section-heading">My Creative<br /><em>Workflow</em></h2>
+        <div class="process-timeline">
+          <div class="process-step process-animate">
+            <div class="process-number">01</div>
+            <div class="process-content">
+              <h3><i class="fas fa-lightbulb"></i> Discovery & Concept</h3>
+              <p>I start by understanding your vision, goals, and target audience. Through detailed consultations, I gather insights to create a solid foundation for the project.</p>
+            </div>
+          </div>
+
+          <div class="process-step process-animate">
+            <div class="process-number">02</div>
+            <div class="process-content">
+              <h3><i class="fas fa-pencil-ruler"></i> Design & Planning</h3>
+              <p>Creating wireframes, mockups, and storyboards. I plan every detail to ensure the final product aligns perfectly with your expectations.</p>
+            </div>
+          </div>
+
+          <div class="process-step process-animate">
+            <div class="process-number">03</div>
+            <div class="process-content">
+              <h3><i class="fas fa-code"></i> Development & Creation</h3>
+              <p>Bringing designs to life with code and creative tools. Whether it's video editing or web development, I execute with precision and creativity.</p>
+            </div>
+          </div>
+
+          <div class="process-step process-animate">
+            <div class="process-number">04</div>
+            <div class="process-content">
+              <h3><i class="fas fa-check-circle"></i> Testing & Refinement</h3>
+              <p>Rigorous testing and quality assurance. I ensure everything works perfectly across all devices and platforms before delivery.</p>
+            </div>
+          </div>
+
+          <div class="process-step process-animate">
+            <div class="process-number">05</div>
+            <div class="process-content">
+              <h3><i class="fas fa-rocket"></i> Launch & Support</h3>
+              <p>Launching your project with confidence. I provide ongoing support and maintenance to ensure continued success and performance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section id="projects" class="section">
+      <div class="section-inner">
+        <div class="section-label"><i class="fas fa-star"></i> 005 / Work</div>
+        <h2 class="section-heading">Selected<br /><em>Projects</em></h2>
+        <div class="projects-grid">
+          <div class="project-card project-animate">
+            <div class="project-thumb">
+              <div class="project-icon"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="project-info">
+              <span class="project-cat"><i class="fas fa-video"></i> Video Edit</span>
+              <h3>Capcut Video</h3>
+              <p>This is the best video that i have ever edited on capcut</p>
+              <div class="project-link"><i class="fas fa-arrow-right"></i> View Project</div>
+            </div>
+          </div>
+          <div class="project-card project-animate">
+            <div class="project-thumb">
+              <div class="project-icon"><i class="fas fa-globe"></i></div>
+            </div>
+            <div class="project-info">
+              <span class="project-cat"><i class="fas fa-laptop"></i> Web Design</span>
+              <h3>Airpods Pro 2nd Gen</h3>
+              <p>Stylish And Animated Website for Apple Airpods Pro</p>
+              <div class="project-link"><i class="fas fa-arrow-right"></i> View Project</div>
+            </div>
+          </div>
+          <div class="project-card project-animate">
+            <div class="project-thumb">
+              <div class="project-icon"><i class="fas fa-film"></i></div>
+            </div>
+            <div class="project-info">
+              <span class="project-cat"><i class="fas fa-wand-magic-sparkles"></i> Motion</span>
+              <h3>The Hidden Message Of Surah Al Fatiha</h3>
+              <p>Short Video</p>
+              <div class="project-link"><i class="fas fa-arrow-right"></i> View Project</div>
+            </div>
+          </div>
+          <div class="project-card project-animate">
+            <div class="project-thumb">
+              <div class="project-icon"><i class="fas fa-apple"></i></div>
+            </div>
+            <div class="project-info">
+              <span class="project-cat"><i class="fas fa-palette"></i> Branding</span>
+              <h3>Best Products from Apple-California</h3>
+              <p>This Product Is Best Audio Device</p>
+              <div class="project-link"><i class="fas fa-arrow-right"></i> View Project</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TESTIMONIALS ── -->
+    <section id="testimonials" class="section">
+      <div class="section-inner">
+        <div class="section-label"><i class="fas fa-quote-left"></i> 006 / Testimonials</div>
+        <h2 class="section-heading">What Clients<br /><em>Say</em></h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card testimonial-animate">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Tushar's work is absolutely phenomenal. The video editing was beyond expectations, with perfect timing and professional quality. Highly recommended!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">A</div>
+              <div class="author-info">
+                <h4>Ahmed Hassan</h4>
+                <p>Content Creator</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card testimonial-animate">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"The web design was stunning and responsive. Tushar understood our brand perfectly and delivered exactly what we needed. Great communication throughout!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">S</div>
+              <div class="author-info">
+                <h4>Sarah Williams</h4>
+                <p>Business Owner</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card testimonial-animate">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Working with Tushar was a pleasure. The motion graphics elevated our project to a professional level. Attention to detail is impeccable!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">M</div>
+              <div class="author-info">
+                <h4>Michael Chen</h4>
+                <p>Marketing Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section id="faq" class="section">
+      <div class="section-inner">
+        <div class="section-label"><i class="fas fa-question-circle"></i> 007 / FAQ</div>
+        <h2 class="section-heading">Frequently Asked<br /><em>Questions</em></h2>
+        <div class="faq-container">
+          <div class="faq-item faq-animate">
+            <div class="faq-question">
+              <h3><i class="fas fa-chevron-right"></i> What is your typical project timeline?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>Project timelines vary depending on scope and complexity. Most projects take 2-4 weeks from start to finish. I'll provide a detailed timeline during our initial consultation.</p>
+            </div>
+          </div>
+
+          <div class="faq-item faq-animate">
+            <div class="faq-question">
+              <h3><i class="fas fa-chevron-right"></i> Do you offer revisions?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes! I include unlimited revisions until you're completely satisfied with the final product. Your satisfaction is my priority.</p>
+            </div>
+          </div>
+
+          <div class="faq-item faq-animate">
+            <div class="faq-question">
+              <h3><i class="fas fa-chevron-right"></i> What's your pricing structure?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>Pricing is customized based on project requirements. I offer flexible packages to suit different budgets. Contact me for a personalized quote.</p>
+            </div>
+          </div>
+
+          <div class="faq-item faq-animate">
+            <div class="faq-question">
+              <h3><i class="fas fa-chevron-right"></i> Can you work with tight deadlines?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>I can accommodate rush projects with expedited timelines. Additional rush fees may apply depending on the urgency and scope.</p>
+            </div>
+          </div>
+
+          <div class="faq-item faq-animate">
+            <div class="faq-question">
+              <h3><i class="fas fa-chevron-right"></i> Do you provide source files?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, I provide all source files and project files upon project completion. You'll have complete ownership of your work.</p>
+            </div>
+          </div>
+
+          <div class="faq-item faq-animate">
+            <div class="faq-question">
+              <h3><i class="fas fa-chevron-right"></i> How do we communicate during the project?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>I maintain regular communication through email, messaging apps, or video calls. You'll have updates at every stage of the project.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact" class="section">
+      <div class="section-inner">
+        <div class="section-label"><i class="fas fa-envelope"></i> 008 / Contact</div>
+        <h2 class="section-heading">Let's Build<br /><em>Something Great</em></h2>
+        <p class="contact-sub"><i class="fas fa-lightbulb"></i> Find me on social media or drop a message.</p>
+
+        <div class="social-links">
+          <a href="https://github.com/H4x0rTu5h4r" class="social-btn social-animate" title="GitHub">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://youtube.com/@muhammadtushar-f4r?si=r0CLMb5Lp7Jy00PY" class="social-btn social-animate" title="YouTube">
+            <i class="fab fa-youtube"></i>
+            <span>YouTube</span>
+          </a>
+          <a href="https://www.instagram.com/muhammadtushar128?igsh=YzljYTk1ODg3Zg==" class="social-btn social-animate" title="Instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="#" class="social-btn social-animate" title="Facebook">
+            <i class="fab fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="https://www.tiktok.com/@h4x0rtu5h4r?is_from_webapp=1&sender_device=pc" class="social-btn social-animate" title="TikTok">
+            <i class="fab fa-tiktok"></i>
+            <span>TikTok</span>
+          </a>
+        </div>
+
+        <div class="contact-footer">
+          <span><i class="fas fa-copyright"></i> 2026 Tushar. All rights reserved.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HIRE ME CTA ── -->
+    <section id="hire-me" class="section hire-me-section">
+      <div class="section-inner">
+        <div class="hire-me-content">
+          <div class="hire-me-text">
+            <h2 class="hire-me-heading">Ready to Work Together?</h2>
+            <p class="hire-me-subtitle">Let's create something amazing. I'm always excited to collaborate on new and interesting projects.</p>
+            <div class="hire-me-features">
+              <div class="hire-feature">
+                <i class="fas fa-bolt"></i>
+                <span>Quick Response</span>
+              </div>
+              <div class="hire-feature">
+                <i class="fas fa-handshake"></i>
+                <span>Professional Service</span>
+              </div>
+              <div class="hire-feature">
+                <i class="fas fa-star"></i>
+                <span>Quality Guaranteed</span>
+              </div>
+            </div>
+          </div>
+          <div class="hire-me-action">
+            <a href="#" class="hire-me-btn" id="hire-me-btn">
+              <span class="btn-text">Hire Me Now</span>
+              <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+            </a>
+            <p class="hire-me-note">Click to get in touch or send me a message</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- end #site-body -->
+
+  <script src="script.js"></script>
+</body>
+</html>
